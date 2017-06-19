@@ -15,6 +15,7 @@ COPY ./app /usr/src/app
 WORKDIR /usr/src/app
 RUN ls -la /usr/src/app
 RUN npm install
+RUN npm install pm2 -g
 RUN ls -la /usr/src/app
 
-CMD [ "npm", "start" ]
+CMD [ "pm2-docker", "bot.js" ]
