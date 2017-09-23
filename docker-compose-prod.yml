@@ -1,0 +1,10 @@
+web:
+  build: .
+  volumes:
+    - "./app:/usr/src/app"
+    - /usr/src/app/node_modules
+  environment:
+    - TELEGRAM_TOKEN=444749064:AAH69M3VCgXQUyqTsOcxOGnRoWlijd8oAIw
+    - TELEGRAM_CHAT_ID=36389671
+    - FB_EMAIL=javier@barriuso.es
+    - FB_PASSWORD=Casanova1*
